@@ -195,8 +195,8 @@ def plot_scatter(df, x_feature_names=None, y_feature_names=None):
     )
 
     fig.update_layout(
-        title="Scatter Plot of Order ID", height=600, width=1800, font_size=14
+        title="Amazon Stock Price Over Time", height=600, width=1800, font_size=14
     )
-    fig.update_yaxes(title_text="Quantity", row=1, col=1)
+    fig.update_yaxes(title_text="Close Price", row=1, col=1)
     fig.show()
     fig.write_html(f"../Plots/EDAPlots/detailed_visualization.html")
